@@ -1,0 +1,182 @@
+@import '../style/variables.scss';
+@import '../style/mixins.scss';
+
+.education {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    &__wrapper {
+        padding: 60px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 510px);
+        column-gap: 100px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 50px;
+            margin-left: 30px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &-darktitle {
+            position: relative;
+            padding-left: 50px;
+            margin-left: 30px;
+            color: white;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__list {
+        list-style-type: none;
+        &-item {
+            position: relative;
+            &:after {
+                content: '';
+                width: 1px;
+                height: calc(100% + 16px);
+                position: absolute;
+                top: -30px;
+                left: 0;
+                background-color: $main-color;
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            background-color: $main-color;
+            top: 48px;
+        }
+        &-title {
+            margin-top: 0;
+        }
+        &-darktitle {
+            color: white;
+            margin-top: 0;
+        }
+        &-head {
+            position: relative;
+            padding: 25px 0 0 100px;
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+        &-body {
+            padding-left: 30px;
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            a {
+                margin-left: 5px;
+            }
+            &-list {
+                margin-left: 15px;
+                li {
+                    margin-top: 5px;
+                    a {
+                        margin-left: 5px;
+                    }
+                }
+            }
+            &-btn {
+                display: inline-block;
+                padding: 2px 2px;
+                font-weight: bold;
+                color: $main-color;
+                text-transform: uppercase;
+                text-decoration: none;
+                border: 2px solid $main-color;
+                cursor: pointer;
+                transition: opacity 0.2s ease;
+                &:hover {
+                    text-decoration: none;
+                    background-color: $main-color;
+                    color: white;
+                }
+            }
+        }
+        &-darkbody {
+            padding-left: 30px;
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: white;
+            a {
+                margin-left: 5px;
+            }
+            &-list {
+                margin-left: 15px;
+                li {
+                    margin-top: 5px;
+                    a {
+                        margin-left: 5px;
+                    }
+                }
+            }
+            &-btn {
+                display: inline-block;
+                padding: 2px 2px;
+                font-weight: bold;
+                color: $main-color;
+                text-transform: uppercase;
+                text-decoration: none;
+                border: 2px solid $main-color;
+                cursor: pointer;
+                transition: opacity 0.2s ease;
+                &:hover {
+                    text-decoration: none;
+                    background-color: $main-color;
+                    color: white;
+                }
+            }
+        }
+        &-icon {
+            position: absolute;
+            top: 29px;
+            left: 45px;
+            @include before_circle;
+            img {
+                position: absolute;
+                left: 17px;
+                top: 15px;
+            }
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+        &-darklocation {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+            color: white;
+        }
+    }
+}

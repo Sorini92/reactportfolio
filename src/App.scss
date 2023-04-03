@@ -1,0 +1,93 @@
+@import './components/style/variables.scss';
+@import './components/style/mixins.scss';
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.app {
+    padding-top: 50px;
+    padding-bottom: 142px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(222, 223, 225);
+    transition: 1s all;
+    &__dark {
+        transition: 1s all;
+        padding-top: 50px;
+        padding-bottom: 142px;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(22, 27, 29);
+    }
+}
+
+.container {
+    width: 1240px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 40px;
+    color: black;
+    background-color: rgb(232, 234, 235);
+    font-family: 'Merienda', cursive;
+	font-family: 'Tillana', cursive;
+    transition: 1s all;
+    &__dark {
+        transition: 1s all;
+        width: 1240px;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 3%;
+        color: black;
+        font-family: 'Merienda', cursive;
+        font-family: 'Tillana', cursive;
+        background-color: rgb(30, 34, 36);
+    }
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin: 20px 0;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    &_fz14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &_fz16 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &_fz36 {
+        font-size: 36px;
+    }
+    &_fz48 {
+        font-size: 48px;
+    }
+    &__section-title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top:-10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle {
+        text-align: center;
+    }
+    
+}

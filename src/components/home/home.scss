@@ -1,0 +1,153 @@
+@import '../style/variables.scss';
+@import '../style/mixins.scss';
+
+.home {
+    transition: 1s all;
+    margin-top: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    &__left {
+        width: 600px;
+        height: 600px;
+        &-img {
+            width: 600px;
+            height: 600px;
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 500px;
+    }
+    &__title {
+        position: relative;
+        padding: 1px 0 0 12px;
+    }
+    &__subtitle {
+        font-weight: bold;
+        font-size: 50px;
+        color: black;
+    }
+    &__text {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        color: black;
+    }
+    &__descr {
+        padding-top: 6px;
+    }
+    &__resumelink {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+    &__resumeimg {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    &__btn {
+        margin-left: 5px;
+        display: inline-block;
+        padding: 10px 1.87vw;
+        font-family: 'Roboto', 'Arial', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        color: $main-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 2px solid $main-color;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+        &:hover {
+            text-decoration: none;
+            background-color: $main-color;
+            color: white;
+        }
+    }
+}
+
+.darkhome {
+    transition: 1s all;
+    margin-top: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    &__left {
+        width: 600px;
+        height: 600px;
+        &-img {
+            width: 600px;
+            height: 600px;
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 500px;
+    }
+    &__title {
+        position: relative;
+        padding: 1px 0 0 12px;
+        color: white;
+    }
+    &__subtitle {
+        font-weight: bold;
+        font-size: 50px;
+        color: white;
+    }
+    &__text {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        color: white;
+    }
+    &__descr {
+        padding-top: 6px;
+    }
+    &__resumelink {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    &__resumeimg {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    &__btn {
+        margin-left: 5px;
+        display: inline-block;
+        padding: 10px 1.87vw;
+        font-family: 'Roboto', 'Arial', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        color: $main-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 2px solid $main-color;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+        &:hover {
+            text-decoration: none;
+            background-color: $main-color;
+            color: white;
+        }
+    }
+}
