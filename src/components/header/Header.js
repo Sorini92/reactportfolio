@@ -5,18 +5,21 @@ import "./header.scss";
 
 const Header = ({setTheme, theme}) => {
 
-    const [active, setActive] = useState(0);
+    const [active, setActive] = useState(parseInt(localStorage.getItem('activeTab')) || 0);
     const [temp, setTemp] = useState(theme === "light" ? false : true);
-    
+
+    let prefix = theme === "light" ? "header" : "darkheader";
+
     const handleClick = (index) => {
+        localStorage.setItem('activeTab', index);
         setActive(index);
     };    
 
     const links = [
-        {to: '/', text: 'Главная'},
-        {to: '/education', text: 'Образование'},
-        {to: '/skills', text: 'Навыки'},
-        {to: '/works', text: 'Работы'},
+        {to: '/', text: 'ГЛАВНАЯ'},
+        {to: '/education', text: 'ОБРАЗОВАНИЕ'},
+        {to: '/skills', text: 'НАВЫКИ'},
+        {to: '/works', text: 'РАБОТЫ'},
     ]
 
     const socials = [
@@ -26,8 +29,6 @@ const Header = ({setTheme, theme}) => {
         {lightimg: "resources/icons/social/linkedin.svg", darkimg: "resources/icons/social/darklinkedin.svg", alt: 'linkedIn', href: ''},
         {lightimg: "resources/icons/social/github.svg", darkimg: "resources/icons/social/darkgithub.svg", alt: 'github', href: ''},
     ];
-
-    let prefix = theme === "light" ? "header" : "darkheader";
 
     const handleChangeTheme = (temp) => {
         if (temp === false) {

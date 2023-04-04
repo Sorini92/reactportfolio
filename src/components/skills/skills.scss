@@ -13,7 +13,8 @@
         gap: 13px;
     }
     &__item {
-        padding: 30px 30px 25px 30px;
+        border-radius: 10px;
+        padding: 25px;
         border: 1px solid $main-color;
         box-shadow: 10px 10px 2px 1px grey;
     }
@@ -50,8 +51,9 @@
         gap: 13px;
     }
     &__item {
+        border-radius: 10px;
         background-color: rgb(47, 52, 55);
-        padding: 30px 30px 25px 30px;
+        padding: 25px;
         border: 1px solid $main-color;
         box-shadow: 10px 10px 2px 1px grey;
     }
@@ -73,5 +75,50 @@
         font-size: 12px;
         line-height: 18px;
         color: #fff;
+    }
+}
+
+@media (max-width: 1250px) {
+    .skills {
+        &__wrapper {
+            grid-template: repeat(3, 270px) / repeat(3, 270px);
+            gap: 13px;
+        }
+    }
+    .darkskills {
+        &__wrapper {
+            grid-template: repeat(3, 270px) / repeat(3, 270px);
+            gap: 13px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .skills {
+        &__wrapper {
+            grid-template: repeat(2, 270px) / repeat(2, 270px);
+            gap: 13px;
+        }
+    }
+    .darkskills {
+        &__wrapper {
+            grid-template: repeat(2, 270px) / repeat(2, 270px);
+            gap: 13px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .skills {
+        &__wrapper {
+            grid-template: repeat(1, 270px) / repeat(1, 270px);
+            gap: 13px;
+        }
+    }
+    .darkskills {
+        &__wrapper {
+            grid-template: repeat(1, 270px) / repeat(1, 270px);
+            gap: 13px;
+        }
     }
 }

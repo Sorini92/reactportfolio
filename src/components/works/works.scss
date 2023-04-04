@@ -84,3 +84,19 @@
 .works__item:hover .works__item_back {
     transform: rotateY(360deg);
 }
+
+@media (max-width: 1250px) {
+    .works {
+        &__wrapper {
+            grid-template: repeat(2, 250px) / repeat(2, 355px);
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .works {
+        &__wrapper {
+            grid-template: repeat(2, 250px) / repeat(1, 355px);
+        }
+    }
+}

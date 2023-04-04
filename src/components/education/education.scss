@@ -6,7 +6,7 @@
     justify-content: center;
     margin-top: 50px;
     &__wrapper {
-        padding: 60px 65px 0 65px;
+        padding: 60px 65px 35px 65px;
         display: grid;
         grid-template-columns: repeat(2, 510px);
         column-gap: 100px;
@@ -104,6 +104,7 @@
                 }
             }
             &-btn {
+                border-radius: 5px;
                 display: inline-block;
                 padding: 2px 2px;
                 font-weight: bold;
@@ -177,6 +178,62 @@
             line-height: 18px;
             margin-top: 5px;
             color: white;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .education {
+        &__wrapper {
+            grid-template-columns: repeat(2, 410px);
+        }
+    }
+    .darkeducation {
+        &__wrapper {
+            grid-template-columns: repeat(2, 410px);
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .education {
+        &__wrapper {
+            grid-template-columns: repeat(2, 370px);
+            column-gap: 50px;
+        }
+    }
+    .darkeducation {
+        &__wrapper {
+            grid-template-columns: repeat(2, 370px);
+            column-gap: 50px;
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    .education {
+        &__wrapper {
+            grid-template-columns: repeat(2, 350px);
+            column-gap: 20px;
+        }
+    }
+    .darkeducation {
+        &__wrapper {
+            grid-template-columns: repeat(2, 350px);
+            column-gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .education {
+        &__wrapper {
+            grid-template-columns: repeat(1, 100%);
+        }
+    }
+    .darkeducation {
+        &__wrapper {
+            grid-template-columns: repeat(1, 550px);
         }
     }
 }

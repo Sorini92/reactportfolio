@@ -12,7 +12,7 @@ import Header from "./components/header/Header";
 
 function App() {
 
-	const [theme, setTheme] = useState(localStorage.getItem('theme'));
+	const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
 	localStorage.setItem("theme", theme);
 
