@@ -13,7 +13,7 @@ const Education = ({theme}) => {
                                 <div className="education__item">
                                     <div className="education__item-head">
                                         <div className="education__item-icon">
-                                            <img src='resources/icons/experience/university.svg' alt="university"/>
+                                            <img src={process.env.PUBLIC_URL + '/resources/icons/experience/university.svg'} alt="university"/>
                                         </div>
                                         <h4 className={`${theme === "light" ? "education__item-title" : "education__item-darktitle"} title title_fz14`}>Национальный технический университет Украины «Киевский политехнический институт имени Игоря Сикорского»</h4>
                                         <div className={theme === "light" ? `education__item-location` : "education__item-darklocation"}>Диплом бакалавра | Киев (2009-2013)</div>
@@ -33,7 +33,7 @@ const Education = ({theme}) => {
                                 <div className="education__item">
                                     <div className="education__item-head">
                                         <div className="education__item-icon">
-                                            <img src="resources/icons/experience/developer.svg" alt="front-end"/>
+                                            <img src={process.env.PUBLIC_URL + "/resources/icons/experience/developer.svg"} alt="front-end"/>
                                         </div>
                                         <h4 className={`${theme === "light" ? "education__item-title" : "education__item-darktitle"} title title_fz14`}>Udemy</h4>
                                         <div className={theme === "light" ? `education__item-location` : "education__item-darklocation"}>Курсы по Web-разработке </div>
@@ -43,16 +43,16 @@ const Education = ({theme}) => {
                                         <strong>Сертификаты об окончании:</strong>
                                         <ol className="education__item-body-list">
                                             <li>Web-разработчик 
-                                                <a href="resources/img/sertificates/webdev.jpg" className="education__item-body-btn" target="_blank">Сертификат</a>
+                                                <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/webdev.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
                                             </li>
                                             <li>Практический JavaScript 
-                                                <a href="resources/img/sertificates/practJS.jpg" className="education__item-body-btn" target="_blank">Сертификат</a>
+                                                <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/practJS.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
                                             </li>
                                             <li>Создание административной панели на React.js и PHP 
-                                                <a href="resources/img/sertificates/admin.jpg" className="education__item-body-btn" target="_blank">Сертификат</a>
+                                                <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/admin.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
                                             </li>
                                             <li>Полный курс по JavaScript, React, Redux 
-                                                <a href="resources/img/sertificates/fullcurse.jpg" className="education__item-body-btn" target="_blank">Сертификат</a>
+                                                <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/fullcurse.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
                                             </li>
                                         </ol>                                  
                                     </div>
@@ -60,14 +60,14 @@ const Education = ({theme}) => {
                                 <div className="education__item">
                                     <div className="education__item-head">
                                         <div className="education__item-icon">
-                                            <img src="resources/icons/experience/developer.svg" alt="front-end"/>
+                                            <img src={process.env.PUBLIC_URL + "/resources/icons/experience/developer.svg"} alt="front-end"/>
                                         </div>
                                         <h4 className={`${theme === "light" ? "education__item-title" : "education__item-darktitle"} title title_fz14`}>MyTime</h4>
                                         <div className={theme === "light" ? `education__item-location` : "education__item-darklocation"}>Курсы английского языка</div>
                                     </div>
                                     <div className={theme === "light" ? "education__item-body" : "education__item-darkbody"}>
                                         На данный момент мой уровень английского языка -<br/> Upper Intermediate(B2)
-                                        <a href="resources/img/sertificates/english.jpg" className="education__item-body-btn" target="_blank">Сертификат</a>
+                                        <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/english.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
                                     </div>
                                 </div>
                             </li>

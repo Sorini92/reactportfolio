@@ -7,7 +7,7 @@ import Education from './components/education/Education';
 import Works from './components/works/Works';
 import Skills from './components/skills/Skills';
 import Page404 from "./components/404/404";
-import 'uikit/dist/css/uikit.min.css';
+import './components/style/animations.scss';
 import Header from "./components/header/Header";
 
 function App() {

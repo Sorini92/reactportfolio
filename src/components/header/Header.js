@@ -23,11 +23,11 @@ const Header = ({setTheme, theme}) => {
     ]
 
     const socials = [
-        {lightimg: "resources/icons/social/telegram.svg", darkimg: "resources/icons/social/darktelegram.svg", alt: 'telegram', href: ''},
-        {lightimg: "resources/icons/social/facebook.svg", darkimg: "resources/icons/social/darkfacebook.svg", alt: 'facebook', href: ''},
-        {lightimg: "resources/icons/social/Instagram.svg", darkimg: "resources/icons/social/darkInstagram.svg", alt: 'instagram', href: ''},
-        {lightimg: "resources/icons/social/linkedin.svg", darkimg: "resources/icons/social/darklinkedin.svg", alt: 'linkedIn', href: ''},
-        {lightimg: "resources/icons/social/github.svg", darkimg: "resources/icons/social/darkgithub.svg", alt: 'github', href: ''},
+        {lightimg: "/resources/icons/social/telegram.svg", darkimg: "/resources/icons/social/darktelegram.svg", alt: 'telegram', href: ''},
+        {lightimg: "/resources/icons/social/facebook.svg", darkimg: "/resources/icons/social/darkfacebook.svg", alt: 'facebook', href: ''},
+        {lightimg: "/resources/icons/social/Instagram.svg", darkimg: "/resources/icons/social/darkInstagram.svg", alt: 'instagram', href: ''},
+        {lightimg: "/resources/icons/social/linkedin.svg", darkimg: "/resources/icons/social/darklinkedin.svg", alt: 'linkedIn', href: ''},
+        {lightimg: "/resources/icons/social/github.svg", darkimg: "/resources/icons/social/darkgithub.svg", alt: 'github', href: ''},
     ];
 
     const handleChangeTheme = (temp) => {
@@ -54,7 +54,7 @@ const Header = ({setTheme, theme}) => {
     const elements = socials.map((item, i) => {
         return (
             <a href={item.href} key={i} className={`${prefix}__social`} target="_blank" rel="noreferrer">
-                {theme !== "light" ? <img src={item.darkimg} alt={item.alt}/> : <img src={item.lightimg} alt={item.alt}/>}
+                {theme !== "light" ? <img src={process.env.PUBLIC_URL + item.darkimg} alt={item.alt}/> : <img src={process.env.PUBLIC_URL + item.lightimg} alt={item.alt}/>}
             </a>
         )
     })
@@ -68,7 +68,7 @@ const Header = ({setTheme, theme}) => {
                 {elements}
                 <div value={temp} className="switcher" onClick={() => handleChangeTheme(temp)}>
                     <div className={theme !== "light" ? "switcher__circle" : "switcher__darkcircle"}>
-                        {theme === "light" ? <img src="resources/icons/light.svg" alt="light theme icon"/> : <img src="resources/icons/dark.png" alt="dark theme icon"/>}
+                        {theme === "light" ? <img src={process.env.PUBLIC_URL + "/resources/icons/light.svg"} alt="light theme icon"/> : <img src={process.env.PUBLIC_URL + "/resources/icons/dark.png"} alt="dark theme icon"/>}
                     </div>
                 </div>
             </div>
