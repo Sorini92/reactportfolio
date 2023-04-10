@@ -219,6 +219,9 @@
 }  
 
 @media (max-width: 785px) {
+    .uk-animation-slide-right-medium {
+        animation: none !important;
+    }
     .home {
         height: 500px;
         &__subtitle {
