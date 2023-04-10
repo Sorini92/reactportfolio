@@ -13,7 +13,7 @@ const Education = ({theme}) => {
                                 <div className="education__item">
                                     <div className="education__item-head">
                                         <div className="education__item-icon">
-                                            <img src={process.env.PUBLIC_URL + '/resources/icons/experience/university.svg'} alt="university"/>
+                                            {theme === "light" ? <img src={process.env.PUBLIC_URL + '/resources/icons/experience/university.svg'} alt="university"/> : <img src={process.env.PUBLIC_URL + '/resources/icons/experience/darkuniversity.svg'} alt="university"/>}
                                         </div>
                                         <h4 className={`${theme === "light" ? "education__item-title" : "education__item-darktitle"} title title_fz14`}>Национальный технический университет Украины «Киевский политехнический институт имени Игоря Сикорского»</h4>
                                         <div className={theme === "light" ? `education__item-location` : "education__item-darklocation"}>Диплом бакалавра | Киев (2009-2013)</div>
@@ -33,7 +33,7 @@ const Education = ({theme}) => {
                                 <div className="education__item">
                                     <div className="education__item-head">
                                         <div className="education__item-icon">
-                                            <img src={process.env.PUBLIC_URL + "/resources/icons/experience/developer.svg"} alt="front-end"/>
+                                            {theme === "light" ? <img src={process.env.PUBLIC_URL + "/resources/icons/experience/courses.svg"} alt="front-end"/> : <img src={process.env.PUBLIC_URL + "/resources/icons/experience/darkcourses.svg"} alt="front-end"/>}
                                         </div>
                                         <h4 className={`${theme === "light" ? "education__item-title" : "education__item-darktitle"} title title_fz14`}>Udemy</h4>
                                         <div className={theme === "light" ? `education__item-location` : "education__item-darklocation"}>Курсы по Web-разработке </div>
@@ -60,7 +60,7 @@ const Education = ({theme}) => {
                                 <div className="education__item">
                                     <div className="education__item-head">
                                         <div className="education__item-icon">
-                                            <img src={process.env.PUBLIC_URL + "/resources/icons/experience/developer.svg"} alt="front-end"/>
+                                            {theme === "light" ? <img src={process.env.PUBLIC_URL + "/resources/icons/experience/courses.svg"} alt="front-end"/> : <img src={process.env.PUBLIC_URL + "/resources/icons/experience/darkcourses.svg"} alt="front-end"/>}
                                         </div>
                                         <h4 className={`${theme === "light" ? "education__item-title" : "education__item-darktitle"} title title_fz14`}>MyTime</h4>
                                         <div className={theme === "light" ? `education__item-location` : "education__item-darklocation"}>Курсы английского языка</div>
