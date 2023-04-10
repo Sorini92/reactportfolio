@@ -5,13 +5,13 @@ import "./header.scss";
 
 const Header = ({setTheme, theme}) => {
 
-    const [active, setActive] = useState(parseInt(localStorage.getItem('activeTab')) || 0);
+    const [active, setActive] = useState(parseInt(sessionStorage.getItem('activeTab')) || 0);
     const [temp, setTemp] = useState(theme === "light" ? false : true);
 
     let prefix = theme === "light" ? "header" : "darkheader";
 
     const handleClick = (index) => {
-        localStorage.setItem('activeTab', index);
+        sessionStorage.setItem('activeTab', index);
         setActive(index);
     };    
 
