@@ -27,6 +27,7 @@ function App() {
 					<Header setTheme={setTheme} theme={theme}/>
 					<Routes>
 						<Route path="/" element={<Navigate replace to='/home' />} />
+						<Route path="/reactportfolio" element={<Navigate replace to='/home' />} />
 						<Route path="/home" element={<Home theme={theme}/>} />
 						<Route path="/education" element={<Education theme={theme}/>} />
 						<Route path="/skills" element={<Skills theme={theme}/>} />
