@@ -5,6 +5,7 @@ const Works = () => {
     const works = [
         {img: "/resources/img/works/pizza.png", alt: "pizza", descr: "React, redux", github: "https://github.com/Sorini92/pizza", site: "https://sorini92.github.io/pizza/"},
         {img: "/resources/img/works/marvel.png", alt: "marvel", descr: "React", github: "https://github.com/Sorini92/marvel", site: "https://sorini92.github.io/marvel/"},
+        {img: "/resources/img/works/quiz.png", alt: "quiz", descr: "React, Redux", github: "https://github.com/Sorini92/quiz", site: "https://sorini92.github.io/quiz/"},
         {img: "/resources/img/works/cripto.bmp", alt: "cripto", descr: "React", github: "https://github.com/Sorini92/cripto", site: "https://sorini92.github.io/cripto"},
         {img: "/resources/img/works/employees.png", alt: "employees", descr: "React", github: "https://github.com/Sorini92/employees", site: "https://sorini92.github.io/employees/"},
         {img: "/resources/img/works/heroadminpanel.png", alt: "heroadminpanel", descr: "React, Redux", github: "https://github.com/Sorini92/heroAdminPanelOnRTKQuery",},
