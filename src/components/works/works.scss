@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
     &__wrapper {
-        margin-top: 60px;
         margin-bottom: 60px;
         display: grid;
         grid-template: repeat(2, 250px) / repeat(3, 355px);

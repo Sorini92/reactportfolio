@@ -7,7 +7,6 @@
     margin-top: 50px;
     margin-bottom: 50px;
     &__wrapper {
-        margin-top: 60px;
         display: grid;
         grid-template: repeat(2, 270px) / repeat(4, 270px);
         gap: 13px;
@@ -19,6 +18,10 @@
         box-shadow: 10px 10px 2px 1px grey;
     }
     &__logo {
+        display: flex;
+        align-items: center;
+        width: 65px;
+        height: 65px;
         img {
             max-width: 65px;
             max-height: 65px;
@@ -45,7 +48,6 @@
     margin-top: 50px;
     margin-bottom: 50px;
     &__wrapper {
-        margin-top: 60px;
         display: grid;
         grid-template: repeat(2, 270px) / repeat(4, 270px);
         gap: 13px;
@@ -58,6 +60,10 @@
         box-shadow: 10px 10px 2px 1px grey;
     }
     &__logo {
+        display: flex;
+        align-items: center;
+        width: 65px;
+        height: 65px;
         img {
             max-width: 65px;
             max-height: 65px;

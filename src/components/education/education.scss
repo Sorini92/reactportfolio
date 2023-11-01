@@ -6,7 +6,7 @@
     justify-content: center;
     margin-top: 50px;
     &__wrapper {
-        padding: 60px 65px 35px 65px;
+        padding: 0 65px 35px 65px;
         display: grid;
         grid-template-columns: repeat(2, 510px);
         column-gap: 100px;
@@ -91,10 +91,16 @@
             font-weight: 500;
             font-size: 12px;
             line-height: 18px;
+            
             a {
                 margin-left: 5px;
             }
             &-list {
+                &-item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
                 margin-left: 15px;
                 li {
                     margin-top: 5px;

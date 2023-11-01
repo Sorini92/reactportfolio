@@ -42,17 +42,35 @@ const Education = ({theme}) => {
                                         Изучал разметку сайтов, каскадные тамблицы стилей, оживление сайтов с помощью JavaScript, написание веб-приложений с помощью React и Redux.<br/>
                                         <strong>Сертификаты об окончании:</strong>
                                         <ol className="education__item-body-list">
-                                            <li>Web-разработчик 
-                                                <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/webdev.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
+                                            <li>
+                                                <div className="education__item-body-list-item">
+                                                    <div>Web-разработчик </div>
+                                                    <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/webdev.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
+                                                </div>
                                             </li>
-                                            <li>Практический JavaScript 
-                                                <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/practJS.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
+                                            <li>
+                                                <div className="education__item-body-list-item">
+                                                    <div>Практический JavaScript </div>
+                                                    <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/practJS.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
+                                                </div>
                                             </li>
-                                            <li>Создание административной панели на React.js и PHP 
-                                                <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/admin.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
+                                            <li>
+                                                <div className="education__item-body-list-item">
+                                                    <div>Создание административной панели на React.js и PHP</div> 
+                                                    <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/admin.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
+                                                </div>
                                             </li>
-                                            <li>Полный курс по JavaScript, React, Redux 
-                                                <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/fullcurse.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
+                                            <li>
+                                                <div className="education__item-body-list-item">
+                                                    <div>Полный курс по JavaScript, React, Redux</div>
+                                                    <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/fullcurse.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="education__item-body-list-item">
+                                                    <div>Полный курс по современному TypeScript + React</div>
+                                                    <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/typescriptsertificate.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
+                                                </div>
                                             </li>
                                         </ol>                                  
                                     </div>
@@ -66,8 +84,10 @@ const Education = ({theme}) => {
                                         <div className={theme === "light" ? `education__item-location` : "education__item-darklocation"}>Курсы английского языка</div>
                                     </div>
                                     <div className={theme === "light" ? "education__item-body" : "education__item-darkbody"}>
-                                        На данный момент мой уровень английского языка -<br/> Upper Intermediate(B2)
-                                        <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/english.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
+                                        <div className="education__item-body-list-item">
+                                            <div>На данный момент мой уровень английского языка - Upper Intermediate(B2)</div>
+                                            <a href={process.env.PUBLIC_URL + "/resources/img/sertificates/english.jpg"} className="education__item-body-btn" target="_blank" rel="noreferrer">Сертификат</a>
+                                        </div>
                                     </div>
                                 </div>
                             </li>

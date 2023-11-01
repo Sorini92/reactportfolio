@@ -3,6 +3,9 @@ import "./works.scss";
 const Works = () => {
 
     const works = [
+        {img: "/resources/img/works/wordlearner.png", alt: "wordslearner", descr: "React, redux", github: "https://github.com/Sorini92/wordlearner", site: "https://wordlearner-ca1f8.web.app/"},
+        {img: "/resources/img/works/wordlearnerextension.png", alt: "wordlearner extension", descr: "React, chrome extension", github: "https://github.com/Sorini92/wordlearnerextension"},
+        {img: "/resources/img/works/beauty.png", alt: "beauty", descr: "React, typescript, context", github: "https://github.com/Sorini92/beauty"},
         {img: "/resources/img/works/pizza.png", alt: "pizza", descr: "React, redux", github: "https://github.com/Sorini92/pizza", site: "https://sorini92.github.io/pizza/"},
         {img: "/resources/img/works/marvel.png", alt: "marvel", descr: "React", github: "https://github.com/Sorini92/marvel", site: "https://sorini92.github.io/marvel/"},
         {img: "/resources/img/works/quiz.png", alt: "quiz", descr: "React, Redux", github: "https://github.com/Sorini92/quiz", site: "https://sorini92.github.io/quiz/"},
