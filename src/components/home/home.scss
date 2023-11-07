@@ -202,6 +202,9 @@
             margin-bottom: 30px;
             color: black;
         }
+        &__resumelink {
+            font-size: 15px;
+        }
     }
     .darkhome {
         &__subtitle {
@@ -214,6 +217,9 @@
             line-height: 20px;
             margin-bottom: 30px;
             color: white;
+        }
+        &__resumelink {
+            font-size: 15px;
         }
     }
 }  
@@ -235,6 +241,9 @@
             margin-bottom: 30px;
             color: black;
         }
+        &__resumelink {
+            font-size: 15px;
+        }
         &__left {
             display: none;
         }
@@ -251,6 +260,9 @@
             line-height: 20px;
             margin-bottom: 30px;
             color: white;
+        }
+        &__resumelink {
+            font-size: 15px;
         }
         &__left {
             display: none;
