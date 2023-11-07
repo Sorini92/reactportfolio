@@ -16,18 +16,18 @@ const Header = ({setTheme, theme}) => {
     };    
 
     const links = [
-        {to: '/', text: 'ГЛАВНАЯ'},
-        {to: '/education', text: 'ОБРАЗОВАНИЕ'},
-        {to: '/skills', text: 'НАВЫКИ'},
-        {to: '/works', text: 'РАБОТЫ'},
+        {to: '/', text: 'ГОЛОВНА'},
+        {to: '/education', text: 'ОСВІТА'},
+        {to: '/skills', text: 'НАВИЧКИ'},
+        {to: '/works', text: 'РОБОТИ'},
     ]
 
     const socials = [
-        {lightimg: "/resources/icons/social/telegram.svg", darkimg: "/resources/icons/social/darktelegram.svg", alt: 'telegram', href: ''},
-        {lightimg: "/resources/icons/social/facebook.svg", darkimg: "/resources/icons/social/darkfacebook.svg", alt: 'facebook', href: ''},
-        {lightimg: "/resources/icons/social/Instagram.svg", darkimg: "/resources/icons/social/darkInstagram.svg", alt: 'instagram', href: ''},
-        {lightimg: "/resources/icons/social/linkedin.svg", darkimg: "/resources/icons/social/darklinkedin.svg", alt: 'linkedIn', href: ''},
-        {lightimg: "/resources/icons/social/github.svg", darkimg: "/resources/icons/social/darkgithub.svg", alt: 'github', href: ''},
+        {lightimg: "/resources/icons/social/telegram.svg", darkimg: "/resources/icons/social/darktelegram.svg", alt: 'telegram', href: 't.me/artbed'},
+        {lightimg: "/resources/icons/social/facebook.svg", darkimg: "/resources/icons/social/darkfacebook.svg", alt: 'facebook', href: 'https://www.facebook.com/artem.bedlinskiy'},
+        {lightimg: "/resources/icons/social/Instagram.svg", darkimg: "/resources/icons/social/darkInstagram.svg", alt: 'instagram', href: 'https://www.instagram.com/artembedlinsky/'},
+        {lightimg: "/resources/icons/social/linkedin.svg", darkimg: "/resources/icons/social/darklinkedin.svg", alt: 'linkedIn', href: 'https://www.linkedin.com/in/artem-bedlinskyi-558778221/'},
+        {lightimg: "/resources/icons/social/github.svg", darkimg: "/resources/icons/social/darkgithub.svg", alt: 'github', href: 'https://github.com/Sorini92'},
     ];
 
     const handleChangeTheme = (temp) => {
