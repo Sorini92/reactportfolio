@@ -23,7 +23,7 @@ const Header = ({setTheme, theme}) => {
     ]
 
     const socials = [
-        {lightimg: "/resources/icons/social/telegram.svg", darkimg: "/resources/icons/social/darktelegram.svg", alt: 'telegram', href: 't.me/artbed'},
+        {lightimg: "/resources/icons/social/telegram.svg", darkimg: "/resources/icons/social/darktelegram.svg", alt: 'telegram', href: 'https://t.me/artbed'},
         {lightimg: "/resources/icons/social/facebook.svg", darkimg: "/resources/icons/social/darkfacebook.svg", alt: 'facebook', href: 'https://www.facebook.com/artem.bedlinskiy'},
         {lightimg: "/resources/icons/social/Instagram.svg", darkimg: "/resources/icons/social/darkInstagram.svg", alt: 'instagram', href: 'https://www.instagram.com/artembedlinsky/'},
         {lightimg: "/resources/icons/social/linkedin.svg", darkimg: "/resources/icons/social/darklinkedin.svg", alt: 'linkedIn', href: 'https://www.linkedin.com/in/artem-bedlinskyi-558778221/'},
