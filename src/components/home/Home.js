@@ -20,7 +20,7 @@ const Home = ({theme}) => {
                     </div>
                         <div className={`${prefix}__resumelink title_fz20`}>
                             <div>Моє резюме:</div>
-                            <a href={process.env.PUBLIC_URL + "resources/img/CV_BedlinkyiArtem_Frontend.pdf"} className={`${prefix}__btn`} download="">Завантажити резюме</a>
+                            <a href={process.env.PUBLIC_URL + "/resources/img/CV_BedlinkyiArtem_Frontend.pdf"} className={`${prefix}__btn`} download="">Завантажити резюме</a>
                         </div>
                 </div>
             </div>
